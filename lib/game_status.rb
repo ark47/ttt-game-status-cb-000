@@ -17,9 +17,6 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-  if #condition
-  else #condition
-  end
 end
 
 def full?(board)
