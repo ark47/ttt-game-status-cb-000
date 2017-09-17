@@ -28,6 +28,7 @@ def full?(board)
 end
 
 def draw?(board)
+  board.each {|x| x == "X" || x == "O"}
 end
 
 def over?(board)
