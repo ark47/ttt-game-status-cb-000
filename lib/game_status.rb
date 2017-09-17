@@ -25,7 +25,6 @@ def won?(board)
 end
 
 def full?(board)
-  board.detect {|x| x == " "}
 end
 
 def draw?(board)
