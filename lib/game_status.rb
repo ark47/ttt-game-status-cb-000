@@ -21,7 +21,7 @@ end
 
 def full?(board)
   if
-    WIN_COMBINATIONS.reject {|x| x = " "}
+    WIN_COMBINATIONS.any? {|x| x == true}
   else
     board.detect {|x| x = " "}
   end
