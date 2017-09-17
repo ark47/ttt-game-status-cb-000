@@ -17,5 +17,14 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-  if board.detect {|x| x = " "} ||
+  if #condition
+  else #condition
+end
+
+def full?(board)
+  if
+    board.reject {|x| x = " "}
+  else
+    board.detect {|x| x = " "}
+  end
 end
