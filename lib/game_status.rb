@@ -20,9 +20,13 @@ def won?(board)
 end
 
 def full?(board)
-  if
-    board.all? {|x| x = " "}
-  else
-    board.detect {|x| x = " "}
-  end
+end
+
+def draw?(board)
+end
+
+def over?(board)
+end
+
+def winner?(board)
 end
