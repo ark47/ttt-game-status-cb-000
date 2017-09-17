@@ -16,28 +16,3 @@ WIN_COMBINATIONS = [
   [6, 4, 2]   # 7
 ]
 
-def won?(board)
-  WIN_COMBINATIONS.detect do |combi|
-    board[combi[0]] == board[combi[1]] &&
-    board[combi[1]] ==  board[combi[2]] &&
-    position_taken?(board, combi[0])
-  end
-end
-
-def full?(board)
-  board.all?{|token| token == "X" || token == "O"}
-end
-
-def draw?(board)
-  full?(board) && !won?(board)
-end
-
-def over?(board)
-  won?(board) || full?(board)
-end
-
-def winner(board)
-  if winner = won?(board)
-    board[winner.first]
-  end
-end
