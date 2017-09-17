@@ -16,3 +16,6 @@ WIN_COMBINATIONS = [
   [6, 4, 2]   # 7
 ]
 
+def won?(board)
+  if board.detect {|x| x = " "} ||
+end
