@@ -21,7 +21,7 @@ end
 
 def full?(board)
   if
-    board.all? {|x| x != " "}
+    board.all? {|x| x = " "}
   else
     board.detect {|x| x = " "}
   end
