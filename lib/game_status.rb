@@ -20,9 +20,9 @@ def won?(board)
 end
 
 def full?(board)
-  # if
-  #   board.all? {|x| x = " "}
-  # else
-  #   board.detect {|x| x = " "}
-  # end
+  if
+    board.all? {|x| x = " "}
+  else
+    board.detect {|x| x = " "}
+  end
 end
