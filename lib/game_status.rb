@@ -25,10 +25,10 @@ def won?(board)
 end
 
 def full?(board)
+  board.each {|x| x == "X" || x == "O"}
 end
 
 def draw?(board)
-  board.each {|x| x == "X" || x == "O"}
 end
 
 def over?(board)
